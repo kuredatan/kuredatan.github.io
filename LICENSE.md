@@ -1,6 +1,13 @@
-The MIT License (MIT)
+--
+layout: null
+permalink: /licence
+--
 
-Copyright (c) 2016 Parker Moore
+# Licence sur le contenu du site [{{ site.title }}]({{ site.url }})
+
+### The MIT License (MIT)
+
+Copyright (c) 2021 C. Lemarié--Rieusset, C. Réda
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
