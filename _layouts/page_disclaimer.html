@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+<div class="back-home-container">
+	<div class="back-to-home">
+	<a href="/" style="color: #000" target="_self">Retourner à l'accueil du site</a>
+	</div>
+</div>
+
+<div class="post-container">
+	<div class="title-container">
+		<div class="post-title"><b>{{ page.title | escape }}</b></div>
+	</div>
+
+	<div class="post-content" itemprop="articleBody">
+		{{ content }}
+	</div>
+</div>
+
+</article>
