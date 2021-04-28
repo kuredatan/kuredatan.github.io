@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="fr">
+<script type="text/javascript">
+	var isMobile = function() {
+	   console.log("Navigator: " + navigator.userAgent);
+	   return /(iphone|ipod|ipad|android|blackberry|windows ce|palm|symbian)/i.test(navigator.userAgent);
+	};
+</script>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+       <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+       <script type="text/x-mathjax-config">
+         MathJax.Hub.Config({
+           tex2jax: {
+             inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+             processEscapes: true
+           }
+         });
+       </script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- script async src="https://www.googletagmanager.com/gtag/js?id=UA-129121205-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-129121205-1');
+</script-->
+
+<!-- Cookie Consent by https://www.PrivacyPolicies.com -->
+<script type="text/javascript" src="//www.privacypolicies.com/public/cookie-consent/3.1.0/cookie-consent.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({"notice_banner_type":"headline",
+"consent_type":"express",
+"palette":"light",
+"language":"fr",
+"website_name":"Réfléchir.fr",
+"change_preferences_selector":"#changePreferences",
+"cookies_policy_url":"http://0.0.0.0:4000/politique-cookies"});
+});
+</script>
+
+<!-- Google Analytics -->
+<script type="text/plain" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=UA-129121205-1"></script>
+<script type="text/plain" cookie-consent="tracking">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-129121205-1');
+</script>
+<!-- end of Google Analytics-->
+
+<noscript>Cookie Consent by <a href="https://www.PrivacyPolicies.com/cookie-consent/" rel="nofollow noopener">PrivacyPolicies.com</a></noscript>
+<!-- End Cookie Consent -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<base target="_blank">
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  <title>
+     
+     
+     Réfléchir - 3. Le raisonnement par contraposition
+     
+  </title>
+  <meta name="description" content="Ce site s&#39;adresse à toutes et à tous, et a pour but de susciter la réflexion, autant par l&#39;analyse des actualités que par la découverte des sciences et des sciences humaines.">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:image:width" content="279">
+<meta property="og:image:height" content="279">
+<meta property="og:description" content="Ce site s'adresse &agrave; tous et a pour but de susciter la r&eacute;flexion, autant par l'analyse des actualit&eacute;s que par la d&eacute;couverte des sciences et des sciences humaines. ">
+<meta property="og:title" content="R&eacute;fl&eacute;chir">
+<meta property="og:url" content="http://reflechir.fr/">
+<meta property="og:image" content="http://reflechir.fr/og-image.jpg">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://0.0.0.0:4000/math%C3%A9matiques/sciences/2017/01/01/3-le-raisonnement-par-contraposition/">
+  <link rel="alternate" type="application/rss+xml" title="Réfléchir" href="/feed.xml">
+
+
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-129121205-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</head>
+
+<!-- Begin Jekyll SEO tag v2.2.3 -->
+<title>Le raisonnement par contraposition | Réfléchir</title>
+<meta property="og:title" content="Le raisonnement par contraposition" />
+<meta property="og:locale" content="fr" />
+<meta name="description" content="Pour comprendre le raisonnement par contraposition, il est utile de préciser ce que l’on entend par Si A alors B (A représentant les hypothèses de l’énoncé et B ses conclusions). Pour cela, on va définir ou, et, non par des tables de vérité. A est vrai si A est évalué à 1 et A est faux si A est évalué à 0…" />
+<meta property="og:description" content="Pour comprendre le raisonnement par contraposition, il est utile de préciser ce que l’on entend par Si A alors B (A représentant les hypothèses de l’énoncé et B ses conclusions). Pour cela, on va définir ou, et, non par des tables de vérité. A est vrai si A est évalué à 1 et A est faux si A est évalué à 0…" />
+<link rel="canonical" href="http://0.0.0.0:4000/math%C3%A9matiques/sciences/2017/01/01/3-le-raisonnement-par-contraposition/" />
+<meta property="og:url" content="http://0.0.0.0:4000/math%C3%A9matiques/sciences/2017/01/01/3-le-raisonnement-par-contraposition/" />
+<meta property="og:site_name" content="Réfléchir" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-01-01T00:00:00+00:00" />
+<script type="application/ld+json">
+{"@context":"http://schema.org","@type":"BlogPosting","headline":"Le raisonnement par contraposition","datePublished":"2017-01-01T00:00:00+00:00","dateModified":"2017-01-01T00:00:00+00:00","description":"Pour comprendre le raisonnement par contraposition, il est utile de préciser ce que l’on entend par Si A alors B (A représentant les hypothèses de l’énoncé et B ses conclusions). Pour cela, on va définir ou, et, non par des tables de vérité. A est vrai si A est évalué à 1 et A est faux si A est évalué à 0…","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/math%C3%A9matiques/sciences/2017/01/01/3-le-raisonnement-par-contraposition/"},"url":"http://0.0.0.0:4000/math%C3%A9matiques/sciences/2017/01/01/3-le-raisonnement-par-contraposition/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<body>
+
+   <header class="site-header">
+	<div class="header-wrapper">
+
+		
+		
+
+	<div class="header-title">
+		
+		Réfléchir
+		
+	</div>
+
+	<div class="header-description">
+		<div class="header-description2"></div>
+		<div class="header-description1">
+		     
+		     Ce site s&#39;adresse à toutes et à tous, et a pour but de susciter la réflexion, autant par l&#39;analyse des actualités que par la découverte des sciences et des sciences humaines.
+		     
+		</div>
+		<div class="header-description3"></div>
+	</div>
+</header>
+
+   <div class="navbar">
+	<a href='/AIDE.html'><b>Aide</b></a>
+	
+	<div class="dropdown">
+		
+		
+		<button class="dropbtn">Actualités<i class="fa fa-caret-down"></i></button>
+		<div class="dropdown-content">
+		
+			
+			
+			<a href="http://0.0.0.0:4000/category/dossiers/">Dossiers</a>
+		
+			
+			
+			<a href="http://0.0.0.0:4000/category/evenements/">Évènements</a>
+		
+			
+			
+			<a href="http://0.0.0.0:4000/category/opinions/">Opinions</a>
+		
+		</div>
+	</div> 
+	
+	<div class="dropdown">
+		
+		
+		<button class="dropbtn">Sciences<i class="fa fa-caret-down"></i></button>
+		<div class="dropdown-content">
+		
+			
+			
+			<a href="http://0.0.0.0:4000/category/informatique/">Informatique</a>
+		
+			
+			
+			<a href="http://0.0.0.0:4000/category/mathematiques/">Mathématiques</a>
+		
+		</div>
+	</div> 
+	
+	<div class="dropdown">
+		
+		
+		<button class="dropbtn">Sciences humaines<i class="fa fa-caret-down"></i></button>
+		<div class="dropdown-content">
+		
+			
+			
+			<a href="http://0.0.0.0:4000/category/luetapprouve/">Lu et approuvé</a>
+		
+			
+			
+			<a href="http://0.0.0.0:4000/category/vuetapprouve/">Vu et approuvé</a>
+		
+		</div>
+	</div> 
+	
+</div>
+
+
+	<main class="page-content" aria-label="Content">
+			<style type="text/css">
+#share-buttons img {
+    width: 35px;
+    padding: 5px;
+    border: 0;
+    box-shadow: 0;
+    display: inline;
+}
+ 
+</style>
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+<div class="back-home-container">
+	<div class="back-to-home">
+	<a href="/" style="color: #000" target="_self">Retourner à l'accueil du site</a>
+	</div>
+</div>
+
+<div class="post-container">
+	<div class="title-container">
+		<div class="post-title"><b>3. Le raisonnement par contraposition</b></div>
+		<div class="post-date">        <h5>
+        <font color="grey">Publié le
+        1
+        
+        janvier
+        
+        2017
+        
+        dans les catégories :
+        
+	
+        <span class="post-tag"><b>mathématiques </b></span>
+        
+	
+        <span class="post-tag"><b>sciences </b></span>
+        
+        
+        </font>
+        </h5>
+</div>
+	</div>
+
+	<div class="post-content" itemprop="articleBody">
+		<p>La version PDF de cet article est disponible <a href="/assets/Contraposition-et-absurde.pdf">ici</a>.</p>
+
+<p>Pour comprendre le raisonnement par contraposition, il est utile de préciser ce que l’on entend par “Si A alors B” (A représentant les hypothèses de l’énoncé et B ses conclusions).</p>
+
+<p>Pour cela, on va définir ou, et, non par des tables de vérité. A est vrai si A est évalué à 1 et A est faux si A est évalué à 0.</p>
+
+<p>La première table ci-dessous correspond bien à l’utilisation habituelle du ou : “A ou B” est vrai si et seulement si au moins l’un des deux est vrai.</p>
+
+<p>La seconde table correspond bien à l’utilisation habituelle du et : “A et B” est vrai si et seulement si les deux sont vrais.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>A</th>
+      <th>B</th>
+      <th>A ou B</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>A</th>
+      <th>B</th>
+      <th>A et B</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>La table de vérité de non est la suivante :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>A</th>
+      <th>non A</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Cette table correspond bien à l’utilisation habituelle du non : non A est vrai si et seulement si A est faux. On remarque que non(non A) est équivalent à A (ils ont la même table de vérité, en d’autres termes A est vrai si et seulement si non(non A) est vrai).</p>
+
+<p>On définit “Si A alors B” (ou “A implique B”, noté A $\Rightarrow$ B) par la table de vérité suivante :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>A</th>
+      <th>B</th>
+      <th>A $\Rightarrow$ B</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Cette table correspond bien à l’utilisation habituelle de “Si A alors B” : lorsque A est faux, B peut être vrai ou faux, lorsque A est vrai, B est vrai.</p>
+
+<p>Considérons à présent la table de vérité de “(non A) ou B”.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>A</th>
+      <th>B</th>
+      <th>(non A) ou B</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>C’est la même table de vérité que celle de “A implique B”. En d’autres termes, “A implique B” est équivalent à “(non A) ou B”.</p>
+
+<p>De la même manière, “(non B) implique (non A)” est équivalent à “(non(non B)) ou (non A)” donc à “B ou (non A)”.</p>
+
+<p>Or “B ou (non A)” est équivalent à “(non A) ou B” qui est équivalent à “A implique B” donc “(non B) implique (non A)” est équivalent à “A implique B”.</p>
+
+<p>Plutôt que de démontrer “Si A alors B”, on peut donc démontrer “Si (non B) alors (non A)”. C’est le raisonnement par contraposition.</p>
+
+<h2 id="le-raisonnement-par-labsurde">Le raisonnement par l’absurde.</h2>
+
+<p>Pour les énoncés de la forme “B” (avec B les conclusions), on peut également mener un raisonnement par contraposition, en réécrivant l’énoncé sous la forme “Si A alors B”, avec le même B et avec A la proposition toujours vraie (dont la table de vérité n’a que des 1 dans la dernière colonne), et en démontrant “Si (non B) alors (non A)”, avec (non A) la proposition toujours fausse (dont la table de vérité n’a que des 0 dans la dernière colonne).</p>
+
+<p>“$2 = 2$” est un exemple de proposition toujours vraie et sa négation “$2 \neq 2$” est un exemple de proposition toujours fausse. Comme on aboutit à quelque chose d’absurde (la proposition toujours fausse) on préfère souvent appeler cette forme du raisonnement par contraposition le raisonnement par l’absurde.</p>
+
+<p>Énoncé : Il y a une infinité de nombres premiers.</p>
+
+<p>Supposons qu’il y a un nombre fini de nombres premiers, notons-les $p_1,…,p_n$ avec $n\in\mathbb{N} \setminus${$0$}. Notons $p = p_1 \times … \times p_n + 1$. Le produit des $p_i$ est supérieur à 1 donc $p$ est supérieur à 2. $p$ admet donc une décomposition en facteurs premiers (voir article 2). Il existe donc $i \in${$1,…,n$} tel que $p = p_i \times q$ avec $q$ un entier. Notons $m$ le produit des $p_j$ différents de $p_i$. On a donc :
+<script type="math/tex">1 = p - p_i \times m = p_i \times (q - m)</script>
+Or $p_i \geq 2$ (car $p_i$ est premier) et $q-m$ est un entier (car $q$ et $m$ sont des entiers) strictement positif (car c’est $\frac{1}{p_i}$) donc $(q-m) \geq 1$ donc $1 \geq 2$ : ceci est absurde (c’est la proposition toujours fausse).
+On en déduit qu’il y a une infinité de nombres premiers.</p>
+
+<p>Une autre forme de raisonnement par l’absurde est la suivante : pour montrer “Si A alors B”, on peut montrer “Si A et non B alors C” avec C la proposition toujours fausse. En effet, (A et non B) $\Rightarrow$ C est équivalent à (non C) $\Rightarrow$ (non(A et non B)) et (non(A et non B)) est équivalent à (non A ou B) (comparez les deux tables de vérité), c’est-à-dire à A $\Rightarrow$ B.</p>
+
+<p>Clémentine Lemarié–Rieusset</p>
+
+	</div>
+	
+	<div class="vertical-separator"></div>
+	
+	<div class="post-footer">
+
+		<div class="share-buttons">
+			<p>
+				<h2><b>
+				Partager cet article
+				</b></h2>
+			</p>
+		</div>
+
+		<div class="share-buttons">
+			<a href="http://www.facebook.com/sharer.php?url=" + /math%C3%A9matiques/sciences/2017/01/01/3-le-raisonnement-par-contraposition/ + ";" target="_blank">
+				<img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+			</a>
+			
+			<div class="vertical-separator"></div>
+
+			<a href="https://twitter.com/share?url=" + /math%C3%A9matiques/sciences/2017/01/01/3-le-raisonnement-par-contraposition/ + ";" target="_blank">
+				<img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+			</a>
+		</div>
+
+		<div class="newsletter-container">
+			<div class="newsletter-intro">
+				<h2><b>
+				<p>Inscrivez-vous pour être averti·e de la sortie de nouveaux articles (ou aimez notre <a href="https://www.facebook.com/reflechir">page Facebook</a>)</p>
+				</b></h2>
+			</div>
+
+			<div class="newsletter-form-group">
+				<form action="https://tinyletter.com/reflechir" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/reflechir', 'popupwindow', 'scrollbars=yes,width=200,height=250');return true">
+				<p><label for="tlemail"><h3><b>Écrire votre adresse mail</b><h3></label></p>
+				<p><input type="text" style="width:100px" name="email" id="tlemail"></p>
+				<input type="hidden" value="1" name="embed"><input type="submit" value="S'inscrire" class="btn btn-warning">
+				</form>
+			</div>
+		</div>
+
+                <br></br>
+
+		<div>
+			<center>
+				<h3><p><b>
+				Nous sommes à la recherche de contributeurs et de contributrices pour les différentes rubriques (voire de nouvelles rubriques) du site.
+				</b></p></h3>
+				<h3><p><b>
+				N'hésitez pas à nous contacter <a href="mailto:sitereflechir@gmail.com">par mail</a> (sitereflechir@gmail.com).
+				</b><p></h3>
+			</center>
+                </div>
+	</div>
+
+</div>
+
+</article>
+
+	</main>
+
+   <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Réfléchir</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+            <li>Nous contacter :</li></br>
+            <li><a href="mailto:sitereflechir@gmail.com">sitereflechir@gmail.com</a></li>
+            <li><a href="https://www.facebook.com/reflechir">Page Facebook</a></li>
+        </ul>
+      </div>
+
+   <div class="wrapper">
+	   <div class="copyright">
+		   <p>Le contenu de ce site est sous <a href="/licence/">licence MIT</a> © 2021.</br>Liste des <a href="/contributeurs/">contributeurs·trices</a></p>
+		   <p><a href="/mentions-legales/">Mentions légales</a></p>
+	   </div>
+	</div>
+</footer>
+
+
+</body>
+
+</html>
