@@ -1,0 +1,169 @@
+title:                  Réfléchir
+image:                  "https://reflechir.fr/android-chrome-512x512.png"
+description:            "Ce site s'adresse à toutes et à tous, et a pour but de susciter la réflexion, autant par l'analyse des actualités que par la découverte des sciences et des sciences humaines."
+url:                    https://reflechir.fr
+baseurl:                ""
+email:                  sitereflechir@gmail.com
+
+categories:             [actualités,sciences, sciences humaines,évènements,fact-checking,opinions,mathématiques,informatique,biologie, physique,dossiers,lu et approuvé,vu et approuvé]
+sections:               [actualités, sciences, sciences humaines]
+nav:                    [[[Actualités, actualites], [["Dossiers", dossiers],["Évènements", evenements],["Opinions",opinions]]],[[Sciences, sciences], [["Informatique", informatique],["Mathématiques", mathematiques]]],[["Sciences humaines", scienceshumaines], [["Lu et approuvé", luetapprouve],["Vu et approuvé", vuetapprouve]]]]
+antichrono:             [actualités, sciences, sciences humaines,dossiers,évènements,fact-checking,opinions,vu et approuvé,lu et approuvé]
+pagenames:              ["Actualités","Sciences","Sciences humaines","Évènements","Dossiers","Fact Checking","Opinions","Mathématiques","Informatique","Biologie","Physique","Lu et approuvé","Vu et approuvé"]
+sectionnames:           ["Actualités","Sciences","Sciences humaines"]
+header_colors:          [["sciences", "#ffff80"], ["sciences humaines", "#e6b3ff"], ["actualités", "#90ebff"]]
+link_colors:            ["#000000","#adad85"]
+
+google_analytics:       'UA-129121205-1'
+
+environment:            "production"
+
+images:                 images/
+pdfs:                   pdfs/
+
+theme:                  minima
+paginate:               5
+
+version:                2.1.0
+
+source:                 .
+destination:            ./_site
+#https://stackoverflow.com/questions/63405212/jekyll-site-posts-returns-empty
+#collections_dir:        .
+plugins_dir:            _plugins
+layouts_dir:            _layouts
+data_dir:               _data
+includes_dir:           _includes
+collections:
+  posts:
+    output:             true
+
+defaults:
+  -
+    scope:
+      path:             ""
+      type:             "posts"
+    values:
+      layout:           "post"
+  -
+    scope:
+      path:             "_posts/actualites"
+    values:
+      title:            Actualités
+      category:         actualités
+  -
+    scope:
+      path:             "_posts/sciences"
+    values:
+      title:            Sciences
+      category:         sciences
+  -
+    scope:
+      path:             "_posts/scienceshumaines"
+    values:
+      title:            Sciences humaines
+      category:         sciences humaines
+  -
+    scope:
+      path:             "_posts/evenements"
+    values:
+      title:            Évènements
+      category:         [évènements,actualités]
+  -
+    scope:
+      path:             "_posts/dossiers"
+    values:
+      title:            Dossiers
+      category:         [dossiers,actualités]
+  -
+    scope:
+      path:             "_posts/fact_checking"
+    values:
+      title:            "Fact Checking"
+      category:         [fact-checking,actualités]
+  -
+    scope:
+      path:             "_posts/opinions"
+    values:
+      title:            Opinions
+      category:         [opinions,actualités]
+  -
+    scope:
+      path:             "_posts/informatique"
+    values:
+      title:            Informatique
+      category:         [informatique,sciences]
+  -
+    scope:
+      path:             "_posts/mathematiques"
+    values:
+      title:            Mathématiques
+      category:         [mathématiques,sciences]
+  -
+    scope:
+      path:             "_posts/luetapprouve"
+    values:
+      title:            "Lu et approuvé"
+      category:         [lu et approuvé,sciences humaines]
+  -
+    scope:
+      path:             "_posts/vuetapprouve"
+    values:
+      title:            "Vu et approuvé"
+      category:         [vu et approuvé,sciences humaines]
+
+safe:                   false
+include:                [".htaccess"]
+exclude:                ["Gemfile", "Gemfile.lock", "node_modules", 
+                        "vendor/bundle/", "vendor/cache/", 
+                        "vendor/gems/", "vendor/ruby/"]
+keep_files:             [".git", ".svn"]
+encoding:               "utf-8"
+markdown_ext:           "markdown,mkdown,mkdn,mkd,md"
+strict_front_matter:    false
+
+show_drafts:            null
+limit_posts:            0
+future:                 false
+unpublished:            false
+
+whitelist:              []
+plugins:                ["jekyll-feed", "jekyll-paginate",
+                        "jekyll-gist", "github-pages", "jekyll-seo-tag"]
+
+markdown:               kramdown
+highlighter:            rouge
+lsi:                    false
+excerpt_separator:      "\n\n"
+incremental:            false
+
+detach:                 false
+port:                   80
+host:                   0.0.0.0
+baseurl:                "/" 
+show_dir_listing:       false
+
+permalink:              pretty
+paginate_path:          '/blog/page:num/'
+timezone:               null
+
+quiet:                  false
+verbose:                false
+
+liquid:
+  error_mode:           strict
+
+rdiscount:
+  extensions:           []
+
+redcarpet:
+  extensions:           []
+
+kramdown:
+  auto_ids:             true
+  entity_output:        as_char
+  toc_levels:           1..6
+  smart_quotes:         lsquo,rsquo,ldquo,rdquo
+  input:                GFM
+  hard_wrap:            false
+  footnote_nr:          1

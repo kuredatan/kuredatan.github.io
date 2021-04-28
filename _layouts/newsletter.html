@@ -1,0 +1,12 @@
+---
+layout: none
+---
+
+<!-- logo -->
+<a href="http://www.reflechir.ml"><img src="/images/Lu_et_approuv.png" style="max-width: 300"></a>
+
+{% for post in site.posts limit:3 %}
+<h2>{{ post.title }}</h2>
+<p>{{ post.content  | truncatewords:80 }} <a href="{{ post.bitlink }}"> Lire l'article &raquo;</a></p>
+
+{% endfor %}

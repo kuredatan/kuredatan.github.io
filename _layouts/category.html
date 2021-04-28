@@ -1,0 +1,29 @@
+---
+layout: page
+---
+
+<div class="back-home-container">
+	<div class="back-to-home">
+	<a href="{{ site.baseurl }}" style="color: #000" target="_self">Retourner à l'accueil du site</a>
+	</div>
+</div>
+
+<div class="home">
+{% if site.categories[page.category] %}
+{% if site.antichrono contains page.category %}
+{% for post in site.categories[page.category] %}
+        {% include thumb_post.html %}
+{% endfor %}
+{% else %}
+{% for post in site.categories[page.category] reversed %}
+        {% include thumb_post.html %}
+{% endfor %}
+{% endif %}
+{% else %}
+  <h3>
+     <b>
+        <center>Il n'y a pas d'articles pour le moment !</center>
+     </b>
+  </h3>
+{% endif %}
+</div>

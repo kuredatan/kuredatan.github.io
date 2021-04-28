@@ -1,0 +1,89 @@
+---
+layout: default
+---
+<style type="text/css">
+#share-buttons img {
+    width: 35px;
+    padding: 5px;
+    border: 0;
+    box-shadow: 0;
+    display: inline;
+}
+ 
+</style>
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+<div class="back-home-container">
+	<div class="back-to-home">
+	<a href="{{ site.baseurl }}" style="color: #000" target="_self">Retourner à l'accueil du site</a>
+	</div>
+</div>
+
+<div class="post-container">
+	<div class="title-container">
+		<div class="post-title"><b>{{ page.title | escape }}</b></div>
+		<div class="post-date">{% include page_date.html %}</div>
+	</div>
+
+	<div class="post-content" itemprop="articleBody">
+		{{ content }}
+	</div>
+	
+	<div class="vertical-separator"></div>
+	
+	<div class="post-footer">
+
+		<div class="share-buttons">
+			<p>
+				<h2><b>
+				Partager cet article
+				</b></h2>
+			</p>
+		</div>
+
+		<div class="share-buttons">
+			<a href="http://www.facebook.com/sharer.php?url=" + {{ page.url }} + ";" target="_blank">
+				<img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+			</a>
+			
+			<div class="vertical-separator"></div>
+
+			<a href="https://twitter.com/share?url=" + {{ page.url }} + ";" target="_blank">
+				<img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+			</a>
+		</div>
+
+		<div class="newsletter-container">
+			<div class="newsletter-intro">
+				<h2><b>
+				<p>Inscrivez-vous pour être averti·e de la sortie de nouveaux articles (ou aimez notre <a href="https://www.facebook.com/reflechir">page Facebook</a>)</p>
+				</b></h2>
+			</div>
+
+			<div class="newsletter-form-group">
+				<form action="https://tinyletter.com/reflechir" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/reflechir', 'popupwindow', 'scrollbars=yes,width=200,height=250');return true">
+				<p><label for="tlemail"><h3><b>Écrire votre adresse mail</b><h3></label></p>
+				<p><input type="text" style="width:100px" name="email" id="tlemail"></p>
+				<input type="hidden" value="1" name="embed"><input type="submit" value="S'inscrire" class="btn btn-warning">
+				</form>
+			</div>
+		</div>
+
+                <br></br>
+
+		<div>
+			<center>
+				<h3><p><b>
+				Nous sommes à la recherche de contributeurs et de contributrices pour les différentes rubriques (voire de nouvelles rubriques) du site.
+				</b></p></h3>
+				<h3><p><b>
+				N'hésitez pas à nous contacter <a href="mailto:{{ site.email }}">par mail</a> ({{ site.email }}).
+				</b><p></h3>
+			</center>
+                </div>
+	</div>
+
+</div>
+
+</article>

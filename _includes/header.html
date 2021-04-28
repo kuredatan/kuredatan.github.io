@@ -1,0 +1,26 @@
+<header class="site-header">
+	<div class="header-wrapper">
+
+		{% assign default_paths = site.pages | map: "path" %}
+		{% assign page_paths = site.header_pages | default: default_paths %}
+
+	<div class="header-title">
+		{% if site.pagenames contains page.title %}
+		{{ page.title | escape }}
+		{% else %}
+		{{ site.title | escape }}
+		{% endif %}
+	</div>
+
+	<div class="header-description">
+		<div class="header-description2"></div>
+		<div class="header-description1">
+		     {% if page.description %}
+		     {{ page.description | escape }}
+		     {% else %}
+		     {{ site.description | escape }}
+		     {% endif %}
+		</div>
+		<div class="header-description3"></div>
+	</div>
+</header>

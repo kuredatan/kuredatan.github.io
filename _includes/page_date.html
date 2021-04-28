@@ -1,0 +1,28 @@
+        <h5>
+        <font color="grey">Publié le
+        {{ page.date | date: "%-d" }}
+        {% assign m = page.date | date: "%-m" %}
+        {% case m %}
+        {% when '1' %}janvier
+        {% when '2' %}février
+        {% when '3' %}mars
+        {% when '4' %}avril
+        {% when '5' %}mai
+        {% when '6' %}juin
+        {% when '7' %}juillet
+        {% when '8' %}août
+        {% when '9' %}septembre
+        {% when '10' %}octobre
+        {% when '11' %}novembre
+        {% when '12' %}décembre
+        {% endcase %}
+        {{ page.date | date: "%Y" }}
+        {% if page.category %}
+        dans les catégories :
+        {% for c in page.category %}
+	{% assign cc = c | append: ' ' %}
+        <span class="post-tag"><b>{{ cc | escape }}</b></span>
+        {% endfor %}
+        {% endif %}
+        </font>
+        </h5>

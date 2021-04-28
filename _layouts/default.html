@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "fr" }}">
+<script type="text/javascript">
+	var isMobile = function() {
+	   console.log("Navigator: " + navigator.userAgent);
+	   return /(iphone|ipod|ipad|android|blackberry|windows ce|palm|symbian)/i.test(navigator.userAgent);
+	};
+</script>
+
+{% include head.html %}
+{% seo %}
+
+<body>
+
+   {% include header.html %}
+   {% include nav.html %}
+
+	<main class="page-content" aria-label="Content">
+			{{content}}
+	</main>
+
+   {% include footer.html %}
+
+</body>
+
+</html>

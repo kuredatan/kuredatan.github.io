@@ -1,0 +1,37 @@
+---
+layout: default
+title: Accueil
+--
+
+<div class="home">
+
+  <ul class="post-list">
+  {% if paginator.posts %}
+    {% for post in paginator.posts %}
+    {% include thumb_post.html %}
+      <br></br>
+    {% endfor %}
+  {% else %}
+  <h3>
+     <b>
+        <center>Il n'y a pas d'articles pour le moment !</center>
+     </b>
+  </h3>
+  </ul>
+  {% endif %}
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">Page précédente</a>
+  {% else %}
+    <span class="previous">Page précédente</span>
+  {% endif %}
+  <span class="page_number ">Page {{ paginator.page }} sur {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Page suivante</a>
+  {% else %}
+    <span class="next ">Page suivante</span>
+  {% endif %}
+</div>
+
+</div>

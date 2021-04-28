@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  {% if site.posts.size > 0 %}
+    {% for post in site.posts %}
+    {% include thumb_post.html %}
+    {% endfor %}
+  {% else %}
+
+  <h3>
+     <b>
+        <center>Il n'y a pas d'articles pour le moment !</center>
+     </b>
+  </h3>
+
+  {% endif %}
+
+</div>

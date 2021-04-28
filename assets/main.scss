@@ -1,0 +1,468 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+$color-out: #fff;
+$color-shadow: #e6e6e6;
+$color-shadow-nav: #e6e6e6;
+$color-hover-nav: #cecccc;
+$color-background-nav: #fff; 
+$color-shadow-background-nav: #a0a0a0;
+$color-links: #a8a8a8;
+
+.navbar {
+  overflow: hidden;
+  background-color: $color-background-nav;
+  font-family: 'Merriweather', serif;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+        -webkit-box-shadow: 0px 0px 40px $color-shadow-nav inset, 1px 1px 2px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 0px 40px $color-shadow-nav inset, 1px 1px 2px rgba(0,0,0,0.3);
+	box-shadow: 0px 0px 40px $color-shadow-nav inset, 1px 1px 2px rgba(0, 0, 0, 0.3);
+
+	-webkit-border-radius: 0 0 40px 40px;
+	-moz-border-radius: 0 0 40px 40px;
+	border-radius: 0 0 40px 40px;
+
+	clear: both;
+	overflow: hidden;
+   margin-top: 10px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 1.2em;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: 'Merriweather', serif;
+  margin-top: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: $color-hover-nav;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: $color-background-nav;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a, .dropdown-content a:hover {
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.51);
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  top: 10px;
+  text-align: left;
+	color: black;
+	text-decoration: none;
+}
+
+.dropdown-content a:active {
+	color: $color-links;
+	text-decoration: none;
+}
+
+.dropdown-content a:hover {
+	text-shadow: 2px 0px #cccccc;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.site-header {
+	background-color: $color-out;
+
+	margin: 0;
+	padding: 0;
+	border: 0;
+	height: 100%;
+	width: 100%;
+
+	display: inline-block;
+	position: relative;
+
+	-webkit-box-shadow: px 0px 40px $color-shadow inset, 1px 1px 2px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 0px 40px $color-shadow inset, 1px 1px 2px rgba(0,0,0,0.3);
+	box-shadow: 0px 0px 40px $color-shadow inset, 1px 1px 2px rgba(0,0,0,0.3);
+
+	clear: both;
+	overflow: hidden;
+
+	-webkit-transition: box-shadow 0.3s ease-in-out;
+	-moz-transition: box-shadow 0.3s ease-in-out;
+	-o-transition: box-shadow 0.3s ease-in-out;
+	transition: box-shadow 0.3s ease-in-out;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+.vertical-separator {
+	margin-left: 20px;
+}
+
+.post-footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+body {
+	color: #000000;
+	background-color: #f2f2f2;
+
+	line-height: 1.2;
+	font-size: calc(0.2vw + 1.2vh);
+	margin-top: 10px;
+	margin-top: 5px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.header-wrapper {
+	font-family: 'Merriweather', serif;
+	text-shadow: 0px 1px #cccccc;
+	font-size: 1.3em;
+
+	width: 100%;
+	height: 100%;
+
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+
+	text-align: center;
+}
+
+.header-title {
+	font-size: 2.5em;
+}
+
+.header-description {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.header-description1 {
+	width: 50%;
+	font-size: 0.9em;
+	padding-top: 20px;
+}
+
+.header-menu {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: 10px;
+}
+
+.post-link {
+	font-size: 1.2em;
+}
+
+.header-sections {
+	text-align: left;
+}
+
+.header-subsections {
+	text-align: left;
+}
+
+a:active {
+	color: #007acc;
+	text-decoration: none;
+}
+
+a, a:hover {
+	color: #007acc;
+	text-decoration: none;
+}
+
+a:hover {
+	text-shadow: 2px 0px #cccccc;
+}
+
+.back-home-container {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.back-to-home {
+	position: relative;
+	text-align: center;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+	background-color: $color-out;
+	font-size: 1.4em;
+	width: 120px;
+	height: 40px;
+
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+
+	padding-top: 2px;
+	padding-bottom: 2px;
+
+	width: 45%;
+	height: 75%;
+}
+
+.page-content {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+div.card {
+	background-color: #fff;
+ 	width: 100%;
+	display: table;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
+	text-align: justify;
+	padding-bottom: 10px;
+	margin: 2px;
+}
+
+div.card-header {
+	width: 100%;
+	line-height: 50px;
+	text-align: center;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
+	font-size: 1.5em;
+}
+
+div.card-container {
+	line-height: 1.5em;
+	font-size: 1.4em;
+	width: 90%;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+div.card-date {
+	font-size: 1em;
+	margin: 15px;
+}
+
+h5 {
+	margin: 0;
+}
+
+.post-container {
+	min-width: 80vw;
+	background-color: #fff;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	text-align: justify;
+	padding: 10px;
+	/* padding-bottom: 10px; */
+	/* margin-bottom: 10px; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 80vw;
+}
+
+.title-container {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.post-title {
+	font-size: 2.5em;
+}
+
+.post-date {
+	margin: 20px;
+	font-size: 1.5em;
+}
+
+.post-content {
+	width: 95%;
+	font-size: 1.4em;
+	line-height: 1.5em;
+
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.share-buttons {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: left;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+img  {
+	display: table;
+	margin: 0 auto;
+	vertical-align: middle;
+	max-height: 300px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+img.preview  {
+	display: table;
+	margin: 0 auto;
+	vertical-align: middle;
+	max-height: 200px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.post-content {
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+.copyright {
+	text-align: left;
+	color: #000;
+	margin-top: 5px;
+}
+
+.newsletter-intro {
+	text-align: center;
+}
+
+.newsletter-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: justify;
+	padding: 10px;
+}
+
+.newsletter-form-group {
+	position: relative;
+
+	text-align: center;
+	background-color: $color-out;
+	-webkit-box-shadow: px 0px 30px $color-shadow inset, 1px 1px 2px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 0px 30px $color-shadow inset, 1px 1px 2px rgba(0,0,0,0.3);
+	box-shadow: 0px 0px 30px $color-shadow inset, 1px 1px 2px rgba(0,0,0,0.3);
+
+	border: 1px solid #ccc;
+
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	height: 150px;
+	width: 200px;
+	padding-top: 10px;
+}
+
+
+li {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+@import 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-alpha2/katex.min.css';
+
+table {
+	background-color:transparent;
+	width:80%;
+	max-width:90%;
+	margin-bottom:20px;
+}
+
+th {
+	text-align:left
+}
+
+table>thead>tr>th {
+	padding:8px;
+	line-height:1.4285714;
+	border-top:1px solid #ddd;
+	vertical-align:bottom;
+	border-bottom:2px solid #ddd;
+}
+
+table>thead>tr>td,table>tbody>tr>th,table>tbody>tr>td,table>tfoot>tr>th,table>tfoot>tr>td {
+	padding:8px;
+	line-height:1.4285714;
+	vertical-align:top;
+	border-top:1px solid #ddd;
+	border:1px solid #ddd;
+}
+
+table>caption+thead>tr:first-child>th,table>caption+thead>tr:first-child>td,table>colgroup+thead>tr:first-child>th,table>colgroup+thead>tr:first-child>td,table>thead:first-child>tr:first-child>th,table>thead:first-child>tr:first-child>td {
+	border-top:0;
+}
+
+table>tbody+tbody {
+	border-top:2px solid #ddd;
+}
+
+table table {
+	background-color:#fff;
+}
+
+table>thead>tr>th,table>thead>tr>td {
+	border-bottom-width:2px;
+}
+
+table>tbody>tr:nth-child(odd)>td,table>tbody>tr:nth-child(odd)>th {
+	background-color:#f9f9f9
+}
