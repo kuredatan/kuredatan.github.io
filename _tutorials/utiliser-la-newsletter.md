@@ -15,7 +15,7 @@ Titre (à écrire dans "Subject") : "Newsletter #numéro du site Réfléchir"
 
 Décocher : "Make letter public"
 
-Dans le corps du message, ajouter l'image (le livre avec un R) via l'icône image. Normalement, l'image est déjà chargée (il faut alors cliquer dessus), et avec les paramètres suivants : width (largeur) 100 et "keep aspect ratio" coché, url = "reflechir.ml". Cliquer sur "Update and insert" en bas de la page (si des difficultés à voir ce bouton, me contacter !)
+Dans le corps du message, ajouter l'image (le livre avec un R) via l'icône image. Normalement, l'image est déjà chargée (il faut alors cliquer dessus), et avec les paramètres suivants : width (largeur) 100 et "keep aspect ratio" coché, url = "reflechir.fr". Cliquer sur "Update and insert" en bas de la page (si des difficultés à voir ce bouton, me contacter !) Pour voir le bouton, ça peut être bien de mettre le dock / la barre de tâches sur la gauche ou sur la droite.
 
 Après l'image et un saut de ligne, écrire :
 
